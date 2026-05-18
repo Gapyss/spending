@@ -7,3 +7,15 @@ management:
 spring:
   application:
     name: spending
+  servlet:
+    multipart:
+      max-file-size: 25MB
+      max-request-size: 25MB
+
+pdf:
+  password: ${PDF_PASSWORD:}
+
+ocr:
+  tessdata-path: ${TESSDATA_PREFIX:/opt/homebrew/share/tessdata}
+  languages: ${OCR_LANGUAGES:tha+eng}
+  dpi: 300
